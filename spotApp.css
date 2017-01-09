@@ -1,0 +1,29 @@
+body{
+  margin: 0px;
+}
+header{
+  height: 5%;
+  width: auto;
+}
+
+.navbar-inverse .navbar-header .navbar-brand {
+    font-size: 25px;
+    color: orange;
+}
+
+footer{
+  background-color: black;
+  color: blue;
+  height: 8%;
+  width: auto;
+}
+
+.footdata a{
+  padding: 5px;
+  font-size: 20px;
+  color: orange;
+}
+
+.navbar-form .form-group button{
+  padding: 8px 25px;
+}

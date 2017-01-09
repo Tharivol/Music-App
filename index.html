@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html ng-app='musicApp'>
+    <head>
+        <title>Flannel Tunes</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+        <link href="main.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+    <body ng-controller='musicStuff as mCtl'>
+      <header>
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <img src="/images/headphones.png" height="50px" width="50px">
+              <a class="navbar-brand" href="#">Flannel Tunes</a>
+            </div>
+            <form class="navbar-form navbar-right form1">
+              <div class="form-group">
+              <input ng-show='mCtl.showSearch' type="text" class="form-control" placeholder="Search">
+              <button ng-click="mCtl.show()" type="submit" class="btn btn-default atist">Genre</button>
+              <button ng-click="mCtl.show()" type="submit" class="btn btn-default album">Artist</button>
+              <button ng-click="mCtl.show()" type="submit" class="btn btn-default album">Albums</button>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </header>
+      <div>
+        <img src="/images/Concert.jpg" height="83%" width="100%">
+      </div>
+      <footer>
+        <nav class="footdata">
+          <a href="https://www.linkedin.com/in/monali-patil-b9a48983">Monali Patil</a>
+          <a href="https://www.linkedin.com/in/monali-patil-b9a48983">Charles Beck</a>
+          <a href="https://www.linkedin.com/in/monali-patil-b9a48983">Jeremy McCabe</a>
+          <a href="https://www.linkedin.com/in/monali-patil-b9a48983">Robert Hughes</a>
+        </nav>
+      </footer>
+      <ng-view></ng-view>
+    </body>
+      <script src="main.js"></script>
+</html>
